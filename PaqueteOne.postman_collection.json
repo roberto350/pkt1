@@ -1,0 +1,562 @@
+{
+	"info": {
+		"_postman_id": "cdc8a240-7fa4-488a-aa3c-82bf5ee88701",
+		"name": "PaqueteOne",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5967614"
+	},
+	"item": [
+		{
+			"name": "ObtenerRoles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Rol",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Rol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerRolId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Rol/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Rol",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardaRol",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\":\"Auditoria\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Rol",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Rol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarRol",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Id\":5,\r\n\"Descripcion\":\"supervisor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Rol",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Rol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarRol",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Rol/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Rol",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardarDatos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"ramon\",\r\n    \"nombre\":\"ramon\",\r\n    \"apellidos\":\"martinez\",\r\n    \"idSucursal\":3,\r\n    \"idRol\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerDatos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerDatoId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerDatoRol",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarDatos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n        \"id\": 4,\r\n        \"usuario\" : \"roman\",\r\n        \"nombre\": \"roman\",\r\n        \"apellidos\": \"reigns\",\r\n        \"idSucursal\": 1,\r\n        \"idRol\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarDato",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/DatoUsuario/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"DatoUsuario",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardarSucursal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"sucursal palma\",\r\n    \"direccion\": \"colonia centro\",\r\n    \"numeroExterior\": \"784\",\r\n    \"cp\": \"12700\",\r\n    \"email\": \"palma@email.com\",\r\n    \"telefono\": \"1478521887\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Sucursal",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Sucursal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerSucursales",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Sucursal",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Sucursal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerSucursalID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Sucursal/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Sucursal",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarSucursal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"descripcion\": \"sucursal madero\",\r\n    \"direccion\": \"colonia ferrosquilla\",\r\n    \"numeroExterior\": \"111\",\r\n    \"cp\": \"12144\",\r\n    \"email\": \"madero@email.com\",\r\n    \"telefono\": \"6681748547\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Sucursal",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Sucursal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarSucursal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Sucursal/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Sucursal",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"usuario\",\r\n    \"clave\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Auth/registrar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Auth",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"usuario\",\r\n    \"clave\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7027/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7027",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
